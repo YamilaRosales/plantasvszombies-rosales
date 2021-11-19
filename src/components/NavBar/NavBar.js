@@ -1,10 +1,10 @@
 import './NavBar.css';
-import logo from '../images/logo.png';
+import logo from '../../images/logo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
-
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
 
@@ -31,7 +31,10 @@ const NavBar = () => {
                     </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
+                <Nav.Link href="#cart">
+                    <CartWidget/>
+                </Nav.Link>
+            </Container>            
       </Navbar>
     );
 }

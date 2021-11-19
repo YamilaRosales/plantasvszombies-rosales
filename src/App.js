@@ -1,11 +1,11 @@
 import './App.css';
-import React,{Fragmet} from 'react';
-import NavBar from './components/NavBar';
+import React from 'react';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <NavBar  />    
+      <NavBar/>    
       <header className="App-header">
        
       </header>
