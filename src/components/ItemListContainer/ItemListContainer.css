@@ -1,0 +1,9 @@
+.item {
+  width: 30rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.item > p {
+  font-size: 12px;
+}
