@@ -20,8 +20,8 @@ export default function ItemCount({ stock, initial, onAdd }) {
   };
 
   return (
-    <div className="CounterSection">
-        <div>
+    <div>
+        <div className="CounterSection">
         <InputGroup className="mb-3">
           <Button variant="outline-secondary" onClick={handlerCounterItemDown}>
             -
@@ -30,7 +30,8 @@ export default function ItemCount({ stock, initial, onAdd }) {
           <Button variant="outline-secondary" onClick={handlerCounterItemUp}>
             +
           </Button>              
-        </InputGroup></div> 
+        </InputGroup>
+        </div> 
         <div className="button-action"><button onClick={onAddHandler}>Agregar</button>
         </div>       
       

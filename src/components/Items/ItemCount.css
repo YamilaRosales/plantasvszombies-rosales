@@ -1,3 +1,10 @@
 .button-action button {
-  width: 100% !important;
+  width: 45% !important;
+  float: left;
+  margin-left: 2rem;
+}
+
+.CounterSection {
+  width: 45%;
+  float: left;
 }
