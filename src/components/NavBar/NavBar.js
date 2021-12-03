@@ -5,13 +5,15 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
+
 
 const NavBar = () => {
 
     return(
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home"><img
+                <Navbar.Brand href="/"><img
                     alt=""
                     src={logo}
                     width="30"
@@ -21,8 +23,9 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#home">Inicio</Nav.Link>
-                    <Nav.Link href="#link">Nosotros</Nav.Link>
+                    <Nav.Link href={'/category/1'}>Categoria 1</Nav.Link>
+                    <Nav.Link href={'/category/2'}>Categoria 2</Nav.Link>
+                    
                     <NavDropdown title="Cursos" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Semillas</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Interiores</NavDropdown.Item>
@@ -31,7 +34,7 @@ const NavBar = () => {
                     </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-                <Nav.Link href="#cart">
+                <Nav.Link href="/">
                     <CartWidget/>
                 </Nav.Link>
             </Container>            

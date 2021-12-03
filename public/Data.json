@@ -1,6 +1,5 @@
-
-  {
-    "plants":[
+  
+  [
       {
         "id":1,
         "name": "Santa Rita",
@@ -10,7 +9,9 @@
         "img":"https://www.google.com/search?q=malvon+imagenes&sxsrf=AOaemvI5PLv_Pseh3nneD41waMIyivZTEg:1637888622810&tbm=isch&source=iu&ictx=1&fir=1caGUY6sMBPsKM%252CLNYxB7ZeR3ft-M%252C_%253BsJ5INCw5cTykrM%252CS5yQNj_sfQqYTM%252C_%253BhHDOgt3frlE4fM%252C57FIqIGMrZuCDM%252C_%253BIfhdAFfj4WTLfM%252CqzVX25UoMaNZZM%252C_%253By13ihPCYK5vz2M%252C9iJVsm8Xv4dyAM%252C_%253BF45QQgNYFahQPM%252CTKPDkppLa0B_OM%252C_%253BeIh0MMaU4p0psM%252C2FgxDvdJmdmGxM%252C_%253BNt0iEeqnuCVHTM%252CLNYxB7ZeR3ft-M%252C_%253Bt-3Vk7eMQ6WXVM%252CCVmPDy7e5g1PhM%252C_%253BTOVaAgY05BD1wM%252CHVyvqdluwIuqEM%252C_%253B-k0QVUNun9Y3oM%252CnZgiYDypeZz7zM%252C_%253BRG_aNPT8GflyXM%252CgkH-cXw9H6ceqM%252C_%253B8dyYW6ToybgF1M%252CqzVX25UoMaNZZM%252C_%253Be579mZh9bOhzkM%252CnZgiYDypeZz7zM%252C_&vet=1&usg=AI4_-kT-esnw1vMn1RDJqSYR9oq31TjWQA&sa=X&sqi=2&ved=2ahUKEwir-azM6rT0AhUSR_EDHaExDAcQ9QF6BAgcEAE#imgrc=sJ5INCw5cTykrM",
         "stock": 5,
         "price": 500,
-        "itemsAdded":0
+        "itemsAdded":0,
+        "categoryId":1
+        
       },    
       {
         "id":2,
@@ -21,7 +22,8 @@
         "img":"https://www.google.com/search?q=malvon+imagenes&sxsrf=AOaemvI5PLv_Pseh3nneD41waMIyivZTEg:1637888622810&tbm=isch&source=iu&ictx=1&fir=1caGUY6sMBPsKM%252CLNYxB7ZeR3ft-M%252C_%253BsJ5INCw5cTykrM%252CS5yQNj_sfQqYTM%252C_%253BhHDOgt3frlE4fM%252C57FIqIGMrZuCDM%252C_%253BIfhdAFfj4WTLfM%252CqzVX25UoMaNZZM%252C_%253By13ihPCYK5vz2M%252C9iJVsm8Xv4dyAM%252C_%253BF45QQgNYFahQPM%252CTKPDkppLa0B_OM%252C_%253BeIh0MMaU4p0psM%252C2FgxDvdJmdmGxM%252C_%253BNt0iEeqnuCVHTM%252CLNYxB7ZeR3ft-M%252C_%253Bt-3Vk7eMQ6WXVM%252CCVmPDy7e5g1PhM%252C_%253BTOVaAgY05BD1wM%252CHVyvqdluwIuqEM%252C_%253B-k0QVUNun9Y3oM%252CnZgiYDypeZz7zM%252C_%253BRG_aNPT8GflyXM%252CgkH-cXw9H6ceqM%252C_%253B8dyYW6ToybgF1M%252CqzVX25UoMaNZZM%252C_%253Be579mZh9bOhzkM%252CnZgiYDypeZz7zM%252C_&vet=1&usg=AI4_-kT-esnw1vMn1RDJqSYR9oq31TjWQA&sa=X&sqi=2&ved=2ahUKEwir-azM6rT0AhUSR_EDHaExDAcQ9QF6BAgcEAE#imgrc=sJ5INCw5cTykrM",
         "stock": 4,
         "price": 250,
-        "itemsAdded":0
+        "itemsAdded":0,
+        "categoryId":2
       },
       {
         "id":3,
@@ -32,7 +34,8 @@
         "img":"https://www.google.com/search?q=malvon+imagenes&sxsrf=AOaemvI5PLv_Pseh3nneD41waMIyivZTEg:1637888622810&tbm=isch&source=iu&ictx=1&fir=1caGUY6sMBPsKM%252CLNYxB7ZeR3ft-M%252C_%253BsJ5INCw5cTykrM%252CS5yQNj_sfQqYTM%252C_%253BhHDOgt3frlE4fM%252C57FIqIGMrZuCDM%252C_%253BIfhdAFfj4WTLfM%252CqzVX25UoMaNZZM%252C_%253By13ihPCYK5vz2M%252C9iJVsm8Xv4dyAM%252C_%253BF45QQgNYFahQPM%252CTKPDkppLa0B_OM%252C_%253BeIh0MMaU4p0psM%252C2FgxDvdJmdmGxM%252C_%253BNt0iEeqnuCVHTM%252CLNYxB7ZeR3ft-M%252C_%253Bt-3Vk7eMQ6WXVM%252CCVmPDy7e5g1PhM%252C_%253BTOVaAgY05BD1wM%252CHVyvqdluwIuqEM%252C_%253B-k0QVUNun9Y3oM%252CnZgiYDypeZz7zM%252C_%253BRG_aNPT8GflyXM%252CgkH-cXw9H6ceqM%252C_%253B8dyYW6ToybgF1M%252CqzVX25UoMaNZZM%252C_%253Be579mZh9bOhzkM%252CnZgiYDypeZz7zM%252C_&vet=1&usg=AI4_-kT-esnw1vMn1RDJqSYR9oq31TjWQA&sa=X&sqi=2&ved=2ahUKEwir-azM6rT0AhUSR_EDHaExDAcQ9QF6BAgcEAE#imgrc=sJ5INCw5cTykrM",
         "stock": 7,
         "price": 450,
-        "itemsAdded":0
+        "itemsAdded":0,
+        "categoryId":2
       },
       {
         "id":4,
@@ -43,7 +46,8 @@
         "img":"https://www.google.com/search?q=malvon+imagenes&sxsrf=AOaemvI5PLv_Pseh3nneD41waMIyivZTEg:1637888622810&tbm=isch&source=iu&ictx=1&fir=1caGUY6sMBPsKM%252CLNYxB7ZeR3ft-M%252C_%253BsJ5INCw5cTykrM%252CS5yQNj_sfQqYTM%252C_%253BhHDOgt3frlE4fM%252C57FIqIGMrZuCDM%252C_%253BIfhdAFfj4WTLfM%252CqzVX25UoMaNZZM%252C_%253By13ihPCYK5vz2M%252C9iJVsm8Xv4dyAM%252C_%253BF45QQgNYFahQPM%252CTKPDkppLa0B_OM%252C_%253BeIh0MMaU4p0psM%252C2FgxDvdJmdmGxM%252C_%253BNt0iEeqnuCVHTM%252CLNYxB7ZeR3ft-M%252C_%253Bt-3Vk7eMQ6WXVM%252CCVmPDy7e5g1PhM%252C_%253BTOVaAgY05BD1wM%252CHVyvqdluwIuqEM%252C_%253B-k0QVUNun9Y3oM%252CnZgiYDypeZz7zM%252C_%253BRG_aNPT8GflyXM%252CgkH-cXw9H6ceqM%252C_%253B8dyYW6ToybgF1M%252CqzVX25UoMaNZZM%252C_%253Be579mZh9bOhzkM%252CnZgiYDypeZz7zM%252C_&vet=1&usg=AI4_-kT-esnw1vMn1RDJqSYR9oq31TjWQA&sa=X&sqi=2&ved=2ahUKEwir-azM6rT0AhUSR_EDHaExDAcQ9QF6BAgcEAE#imgrc=sJ5INCw5cTykrM",
         "stock": 6,
         "price":120,
-        "itemsAdded":0
+        "itemsAdded":0,
+        "categoryId":2
       },
       {
         "id":5,
@@ -54,7 +58,8 @@
         "img":"https://www.google.com/search?q=malvon+imagenes&sxsrf=AOaemvI5PLv_Pseh3nneD41waMIyivZTEg:1637888622810&tbm=isch&source=iu&ictx=1&fir=1caGUY6sMBPsKM%252CLNYxB7ZeR3ft-M%252C_%253BsJ5INCw5cTykrM%252CS5yQNj_sfQqYTM%252C_%253BhHDOgt3frlE4fM%252C57FIqIGMrZuCDM%252C_%253BIfhdAFfj4WTLfM%252CqzVX25UoMaNZZM%252C_%253By13ihPCYK5vz2M%252C9iJVsm8Xv4dyAM%252C_%253BF45QQgNYFahQPM%252CTKPDkppLa0B_OM%252C_%253BeIh0MMaU4p0psM%252C2FgxDvdJmdmGxM%252C_%253BNt0iEeqnuCVHTM%252CLNYxB7ZeR3ft-M%252C_%253Bt-3Vk7eMQ6WXVM%252CCVmPDy7e5g1PhM%252C_%253BTOVaAgY05BD1wM%252CHVyvqdluwIuqEM%252C_%253B-k0QVUNun9Y3oM%252CnZgiYDypeZz7zM%252C_%253BRG_aNPT8GflyXM%252CgkH-cXw9H6ceqM%252C_%253B8dyYW6ToybgF1M%252CqzVX25UoMaNZZM%252C_%253Be579mZh9bOhzkM%252CnZgiYDypeZz7zM%252C_&vet=1&usg=AI4_-kT-esnw1vMn1RDJqSYR9oq31TjWQA&sa=X&sqi=2&ved=2ahUKEwir-azM6rT0AhUSR_EDHaExDAcQ9QF6BAgcEAE#imgrc=sJ5INCw5cTykrM",
         "stock": 6,
         "price":300,
-        "itemsAdded":0
+        "itemsAdded":0,
+        "categoryId":3
       }
     ]
-}
+

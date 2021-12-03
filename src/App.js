@@ -1,32 +1,28 @@
 import "./App.css";
-import React, { useState, useEffect }  from "react";
+import React  from "react";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   
-  const [listItems, setListItems] = useState([]);
-  
-  useEffect(() => {
-    setTimeout(() => {
-        fetch('./Data.json',{
-          headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }
-        })
-        .then(response => response.json())
-        .then(respJSON => {console.log(respJSON.results); setListItems(respJSON.results)})
-        .catch((err) => console.log('Error: ',err))  
-      },2000)    
-  }, [])
-
   return (
+   
     <div className="App">
+      <BrowserRouter>
       <NavBar />
-      <ItemListContainer items={listItems} description="Cursos" onAddHandler={(a,b)=>(console.log("se agregó al carrito"))}/>
+      <Routes>
+        <Route exact path="/" element={<ItemListContainer description="Cursos" onAddHandler={(a,b)=>(console.log("se agregó al carrito"))}/>} />
+        <Route path="/category/:categoryId" element={<ItemListContainer description="Cursos" onAddHandler={(a,b)=>(console.log("se agregó al carrito"))}/>} /> 
+        <Route path="/item/:id" element={<ItemDetailContainer/>} /> 
+      </Routes>
+        
+     
+      
+      </BrowserRouter>  
     </div>
+    
   );
 }
 
