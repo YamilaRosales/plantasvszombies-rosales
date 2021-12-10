@@ -3,10 +3,13 @@ import ItemCount from '../Items/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import { useContext, CartContext } from "../context/useContext";
 
 const ItemDetail = ({item}) => {
     const [added, setAdded] = useState(false);
-    
+
+    const {addItem} = useContext(CartContext);
+
     const onAddHandler = (e) =>{
         e.PreventDefault();
         console.log("added");
@@ -22,7 +25,7 @@ const ItemDetail = ({item}) => {
             <h5>Precio: {item.price}</h5>
             <h6>(Unidades disponibles: {item.stock})</h6>
             {
-                added ? <Link to="/cart"><Button variant="primary" size="lg" active>ComprarAhora</Button></Link> : <ItemCount stock={item.stock} initial={1} onAdd={onAddHandler}/>
+                added ? <Link to="/cart"><Button variant="primary" size="lg" active>ComprarAhora</Button></Link> : <ItemCount stock={item.stock} initial={1} onAdd={addItem}/>
             }
             
         </div>
