@@ -15,7 +15,7 @@ export default function ItemCount({ stock, initial, onAdd }) {
 
   const onAddHandler = () => {
     if (counterItem > 0 && counterItem <= stock) {
-      onAdd(counterItem, stock);
+      onAdd(counterItem);
     }
   };
 

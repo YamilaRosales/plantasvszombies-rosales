@@ -10,9 +10,9 @@ const ItemDetail = ({item}) => {
 
     const {addItem} = useContext(CartContext);
 
-    const onAddHandler = (e) =>{
-        e.PreventDefault();
+    const onAddHandler = (itemCount) =>{
         console.log("added");
+        addItem(item, itemCount);
         setAdded(true);
     }
 
@@ -25,7 +25,7 @@ const ItemDetail = ({item}) => {
             <h5>Precio: {item.price}</h5>
             <h6>(Unidades disponibles: {item.stock})</h6>
             {
-                added ? <Link to="/cart"><Button variant="primary" size="lg" active>ComprarAhora</Button></Link> : <ItemCount stock={item.stock} initial={1} onAdd={addItem}/>
+                added ? <Link to="/cart"><Button variant="primary" size="lg" active>ComprarAhora</Button></Link> : <ItemCount stock={item.stock} initial={1} onAdd={onAddHandler}/>
             }
             
         </div>
