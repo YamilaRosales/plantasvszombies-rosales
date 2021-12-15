@@ -8,10 +8,14 @@ import { CartContext } from "../context/CartContext";
 const ItemDetail = ({item}) => {
     const [added, setAdded] = useState(false);
 
-    const {items, addItem, removeItem, clear } = useContext(CartContext);
+    const [items, addItem, removeItem, clear ] = useContext(CartContext);
 
     const onAddHandler = (itemCount) =>{
         console.log("added");
+        console.log(item);
+        console.log(itemCount);
+        console.log(addItem);
+        
         addItem(item, itemCount);
         setAdded(true);
     }

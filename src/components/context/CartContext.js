@@ -10,8 +10,15 @@ const CartProvider = ({defaultValue=[], children}) =>{
         return items.some(i => i.id = id);
     }
 
+    const sum = (id, qty) => {
+        let itemsAux = items;
+        itemsAux.forEach(function(item){
+           if(item.item.id === id)   item.item.itemsAdded+=qty;
+        });
+        setItems(itemsAux);
+    }
     const addItem =  (item, qty)=>{
-        return isInCart(item.id) ? null: setItems([...items, {item, qty: qty}]);
+        return isInCart(item.id) ?  sum(item.id, qty): setItems([...items, {item, qty: qty}]);
     }
 
     const removeItem = (itemId)=>{
