@@ -33,7 +33,7 @@ const NavBar = () => {
                     </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-                <Nav.Link href="/">
+                <Nav.Link href="/Cart">
                     <CartWidget/>
                 </Nav.Link>
             </Container>            

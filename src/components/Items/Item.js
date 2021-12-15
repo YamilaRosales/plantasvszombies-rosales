@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import "./Item.css"
 
 const Item = ({ item }) => {
-  console.log("name: ",item.name);
+  
    return (
     <Card style={{height: "auto"}}>
       <Card.Img variant="top" src={item.img} />

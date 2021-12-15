@@ -9,18 +9,24 @@ const CartProvider = ({defaultValue=[], children}) =>{
     const isInCart = (id) => {
         return items.some(i => i.id = id);
     }
+    
 
     const sum = (id, qty) => {
         let itemsAux = items;
         itemsAux.forEach(function(item){
-           if(item.item.id === id)   item.item.itemsAdded+=qty;
+           if(item.item.id === id)   
+                item.qty+=qty;
         });
         setItems(itemsAux);
     }
     const addItem =  (item, qty)=>{
-        return isInCart(item.id) ?  sum(item.id, qty): setItems([...items, {item, qty: qty}]);
+        if(isInCart(item.id)) 
+            sum(item.id, qty);
+        else
+            setItems([...items, {item, qty: qty}]);
+        console.log(items);
     }
-
+    
     const removeItem = (itemId)=>{
         return isInCart(itemId) ? console.log("No se encontro el item a eliminar"): items.filter(item => item.id !== itemId);
     }
@@ -28,6 +34,7 @@ const CartProvider = ({defaultValue=[], children}) =>{
     const clear =()=>{
         return items.length =0;
     }
+    
     return <CartContext.Provider value={[items, addItem, removeItem, clear ]}>{children}</CartContext.Provider>
 }
 export default CartProvider;
