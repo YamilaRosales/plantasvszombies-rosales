@@ -1,9 +1,9 @@
 import React from 'react'
 import ItemCount from '../Items/ItemCount';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import { useContext, CartContext } from "../context/CartContext";
+import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({item}) => {
     const [added, setAdded] = useState(false);

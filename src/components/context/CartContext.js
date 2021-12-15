@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react'
 export const CartContext = createContext ([])
 
 
-const CartProvider = (children) =>{
+const CartProvider = ({defaultValue=[], children}) =>{
     const [items, setItems] = useState([])
 
     const isInCart = (id) => {

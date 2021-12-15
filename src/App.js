@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import CartProvider from "./components/context/CartContext";
-import Router from "./Router/Router";
+import Router from "./components/Router/Router";
 function App() {
   return (
     <div className="App">
