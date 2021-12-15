@@ -14,6 +14,13 @@ const CartProvider = (children) =>{
         return isInCart(item.id) ? null: setItems([...items, {item, qty: qty}]);
     }
 
-    return <CartContext.Provider value={[items, addItem ]}>{children}</CartContext.Provider>
+    const removeItem = (itemId)=>{
+        return isInCart(itemId) ? console.log("No se encontro el item a eliminar"): items.filter(item => item.id !== itemId);
+    }
+
+    const clear =()=>{
+        return items.length =0;
+    }
+    return <CartContext.Provider value={[items, addItem, removeItem, clear ]}>{children}</CartContext.Provider>
 }
 export default CartProvider;

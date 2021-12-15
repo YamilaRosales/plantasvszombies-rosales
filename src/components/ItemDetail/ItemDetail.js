@@ -3,12 +3,12 @@ import ItemCount from '../Items/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import { useContext, CartContext } from "../context/useContext";
+import { useContext, CartContext } from "../context/CartContext";
 
 const ItemDetail = ({item}) => {
     const [added, setAdded] = useState(false);
 
-    const {addItem} = useContext(CartContext);
+    const {items, addItem, removeItem, clear } = useContext(CartContext);
 
     const onAddHandler = (itemCount) =>{
         console.log("added");
